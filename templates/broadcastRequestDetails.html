@@ -1,0 +1,20 @@
+<ion-view title="Broadcast Request Details" id="page8" style="">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="broadcastRequestDetails-card22">
+      <ion-item id="broadcastRequestDetails-list-item15" style="">
+        <h2><b>Customer Name:</b> {{customerinfo.first_name}} {{customerinfo.last_name}}</h2>
+        <p><b>Phone Number:</b> {{customerinfo.phone_no}}</p> 
+        <a class="button button-small button-icon icon ion-email" ng-href="sms: {{customerinfo.phone_no}}"></a>
+        <a class="button button-small button-icon icon ion-android-call" ng-href="tel: {{customerinfo.phone_no}}"></a>             
+      </ion-item>
+      <ion-item id="broadcastRequestDetails-address" style="">Location: {{booking_info.address}}</ion-item>
+      <ion-item id="broadcastRequestDetails-Date" style="">Date: {{booking_info.booking_date | date:"MM/dd/yyyy"}}</ion-item>
+      <ion-item id="broadcastRequestDetails-Time" style="">Time: {{booking_info.booking_time | date:"hh:mm a"}}</ion-item>
+      <ion-item id="broadcastRequestDetails-Details" style="">Job Details: {{booking_info.details}}</ion-item>
+      <div id="broadcastRequestDetails-button-bar2" class="button-bar">
+        <button id="broadcastRequestDetails-button10" class="button button-positive  button-block" ng-click="apply()">Apply</button>
+      </div>
+    </div>
+      {{x}}
+  </ion-content>
+</ion-view>

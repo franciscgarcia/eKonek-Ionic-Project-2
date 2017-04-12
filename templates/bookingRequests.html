@@ -1,0 +1,13 @@
+<ion-view title="Booking Requests" id="page2" style="" cache-view="false">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="bookingRequests-list3">
+      <ion-item id="bookingRequests-list-item12" ui-sref="menu.bookingRequestDetails
+                ({cust_ID: '{{bookingDetail.customer}}', book_ID: '{{bookingDetail.id}}',
+                book_date: '{{bookingDetail.booking_date}}', book_time: '{{bookingDetail.booking_time}}', 
+                book_address: '{{bookingDetail.address}}', book_details: '{{bookingDetail.details}}'})" 
+                style="" ng-repeat="bookingDetail in bookingDetails">
+        <h2><b>Booking Details:</b> {{bookingDetail.details}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

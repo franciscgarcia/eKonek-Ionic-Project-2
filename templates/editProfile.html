@@ -1,0 +1,17 @@
+<ion-view title="Edit Profile" id="page5" style="" cache-view="false">
+  <ion-content padding="true" class="has-header">
+    <form id="editProfile-form4" class="list">
+      <label class="item item-input" id="editProfile-input8">
+        <span class="input-label">New Username</span>
+        <input placeholder="" type="text" ng-model="data.username" ng-pattern="/^[a-zA-Z0-9]*$/" 
+               ng-trim="false">
+      </label>
+      <label class="item item-input" id="editProfile-input9">
+        <span class="input-label">New Password</span>
+        <input placeholder="" type="text" ng-model="data.password">
+      </label>
+      <button id="editProfile-button3" class="button button-positive  button-block" 
+              ng-disabled="!data.username || !data.password" ng-click="update()">Save Changes</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view title="Broadcast Requests" id="page3" style="">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="broadcastRequests-list4">
+      <ion-item id="broadcastRequests-list-item13" ui-sref="menu.broadcastRequestDetails
+        ({ customer_id: '{{broadcastRequest.customer}}', booking_id: '{{broadcastRequest.id}}'})" style=""
+                ng-repeat="broadcastRequest in broadcastRequests">
+        <h2><b>Booking Details:</b> {{broadcastRequest.details}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

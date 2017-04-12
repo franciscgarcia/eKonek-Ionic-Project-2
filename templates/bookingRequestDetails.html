@@ -1,0 +1,24 @@
+<ion-view title="Booking Request Details" id="page6" style="">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="bookingRequestDetails-card21">
+      <ion-item id="bookingRequestDetails-list-item7" style="">
+        <h2><b>Customer Name:</b> {{cust_infos.first_name}} {{cust_infos.last_name}}</h2>
+        <p><b>Phone Number:</b> {{cust_infos.phone_no}}</p>
+        <a class="button button-small button-icon icon ion-email" ng-href="sms: {{cust_infos.phone_no}}"></a>
+        <a class="button button-small button-icon icon ion-android-call" ng-href="tel: {{cust_infos.phone_no}}"></a>
+      </ion-item>      
+      <ion-item id="bookingRequestDetails-details-address" style="">Location: {{book_address}}</ion-item>
+      <ion-item id="bookingRequestDetails-details-date" style="">Date: {{book_date | date:"MM/dd/yyyy"}}</ion-item>
+      <ion-item id="bookingRequestDetails-details-time" style="">Time: {{book_time | date:"h:mm a"}}</ion-item>
+      <ion-item id="bookingRequestDetails-details-details" style="">Job Details: {{book_details}}</ion-item>
+      <div id="bookingRequestDetails-button-bar1" class="button-bar">
+        <button id="bookingRequestDetails-button7" class="button button-positive  button-block" 
+                ng-click="accept()">Accept</button>
+
+        <button id="bookingRequestDetails-button8" class="button button-assertive  button-block" 
+                ng-click="reject()">Reject</button>
+      </div>
+    </div>
+      {{book_ID}}
+  </ion-content>
+</ion-view>

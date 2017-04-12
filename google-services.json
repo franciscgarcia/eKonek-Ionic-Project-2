@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "309566814048",
+    "firebase_url": "https://ekonek-worker.firebaseio.com",
+    "project_id": "ekonek-worker",
+    "storage_bucket": "ekonek-worker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309566814048:android:a27da9f28a624968",
+        "android_client_info": {
+          "package_name": "io.cordova.myapp4c4c54"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309566814048-v57tmmrt9h5rmcddokg1b89gbhcj71cu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfTwZKnNkFp6otmAnLPIgfy65yP2bOWtc"
+        },
+        {
+          "current_key": "AIzaSyC5MR4bYDtn2spHWT-tlJd_-AJqJSgO_qQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
